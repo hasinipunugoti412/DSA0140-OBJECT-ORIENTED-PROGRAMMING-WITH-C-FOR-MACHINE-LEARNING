@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std; 
+int main()
+{
+  string str;
+  cout<<"Enter a string: ";
+  getline(cin,str);
+  int flag=0;
+  for(int i=0;i<str.length();i++)
+  {
+    if ((str[i]>=48 && str[i]<=57)||(str[i]>=65 && str[i]<=90)||(str[i]>=97 && str[i]<=122))
+        {
+        	continue;
+        }
+    else
+    {
+      cout<<"String contains special character.\n";
+      flag=1;
+      break;
+    }
+  }
+  if(flag==0)
+  {
+    cout<<"There is no special character in the string.\n";
+  }
+  return 0;}
